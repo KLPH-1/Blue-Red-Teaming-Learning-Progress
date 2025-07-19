@@ -1,0 +1,15 @@
+Firstly you must have installed Wazuh and link the agent to the device that you wish to defend. I encourage you to try it yourself if you haven't done those yet. Youtube,AI anything as long as you are learning new things.
+
+Let's move on to the point since you have installed wazuh it'll be the first thing you'll see when you log into wazuh. -wazuh.png
+
+go and check the active devices. -wazuh(win).png
+
+click the device and you'll see beautifully presented dashboard. -wazuh(dash).png
+
+This part will be the part after the red team side has done the attack,open up the SCA. -SCA(waz).png
+
+you'll see some failed attempts in my case there was 350 of those. -fails(waz).png
+
+this part is the part when we know we were brute forced via remote access. -brutelog.png
+
+Now we must stop the attacked device and report back to senior for the follow up.
