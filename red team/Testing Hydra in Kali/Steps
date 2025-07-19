@@ -1,0 +1,23 @@
+first install a VM on your device. as for me it's window 11. -window11(VM).png
+
+check your window version. -Dxdiag(W11).png
+
+if your window version is home version you won't be able to do remote assess control. -win(ver).png
+
+if your window is in home edition , don't worry we can fix it. open up the powershell as admin. -powershell.png
+
+and type as in the picture -winacti.png
+
+in there you can activate your window and change your window edition as well as activate the MS.office -changeWinEdi.png
+
+once you have changed the window edition open up remote desktop in the setting. -remote.png -remote(on).png
+
+check your VM's IP. you must use bridge adapator network in VM's setting. Once donw type ipconfig in your VM(window11). -win(ping).png
+
+It's now ready to attack. In your Kali device prepare some username and password files. I have some example in the picture. -us&pass.png
+
+now run the hydra script. -hydra.png
+
+You'll be able to see the matching username and password if it's matches with your user name and password.In my case it was Testing(username) and 12345678(password)
+
+Congrats now we know how to use hydra. For more information I advice you to check the documentation.
