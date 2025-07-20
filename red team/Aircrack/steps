@@ -1,0 +1,41 @@
+Today we shall crack wifi password
+
+Check your wifi device. -iwconfig.png
+
+Then stop all the services that is running on the wifi device. -airmonng.png
+
+And then start your wifi device as a monitor mode which can sniff all the wifi on the vicinity. -armonstart.png
+
+Let's start the sniffing process. -airodump.png
+
+You'll see all the wifi that is on your vicinity. -bssidall.png
+
+Focus on the target wifi. In my case it's my wifi named MCC. -targetwifi.png
+
+Make the targeted wifi disconnect to its connected device by deauthing. -deaugh.png
+
+Once the device try to logs in to the wifi you'll capture the handshake hash. -captures.png
+
+To crack the password, you must first make your word lists.You may use any style to make a word list. I have shown some examples there by using crunch and seq. -lists(crunch).png  -phlist(seq).png
+
+Start the cracking.  -cracking.png
+
+since i already know my wifi password I created an easy list that will catch the password early and this is the result. -passwordcracked.png
+
+it took about 11 mins to check 9 Millions of numbers on my device which is core i5 cpu.
+To be able to use wifi back you have to stop the monitor mode  (sudo airmon-ng stop wlan0mon) and then (sudo systemctl start NetworkManager)
+you may use hashcat which can utilize the power of GPU to fasten the process.
+
+Pre install the nvidia driver and cuda toolkit as well as hashcat. (sudo apt install nvidia-driver) (sudo apt install nvidia-cuda-toolkit) (sudo apt install hashcat) restart if needed.
+
+To use hashcat. We must change the capture.cap to hashcat's file format. -changefiletype.png
+
+check your file. -checkhc.png
+
+Use hashcat. -hashcat.png
+
+Password cracked. -hashpasswordcracked.png
+
+It took me 45 second to crack 9 Millions of numbers which is pretty fast compared to CPU that took 11 mins and my GPU is only RTX 3060. It'd be a lot faster if I got a better GPU. 
+That's all for now . Enjoy the Progress.
+
