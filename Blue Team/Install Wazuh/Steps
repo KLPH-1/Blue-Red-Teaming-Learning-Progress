@@ -1,0 +1,25 @@
+I am installing Wazuh on Ubuntu VM.
+
+first in terminal log in as super user. -superuser.png
+
+In browser go wo wazuh website and into the documentation. -wazuh site.png
+
+There is installation guide provided in the documentation. -install guide.png
+
+copy the cmd and paste it into your terminal and for the bash command instead of copying all use -a to install all the wazuh contents. -curlwazuh.png -bashinstall.png
+
+You'll get your username and password along with the ip address to log into the wazuh.
+
+type the ip address into the browser and use the provided username and password.
+
+to monitor your targeted device first you must know the ip of the sever's device. -ipconfig.png
+
+if the ip is wrong please check the VM's network system. use Bridge adpator as network system.
+
+In the wazuh dashboard you'll see add agent and proceed to it.
+
+choose your targeted device type . Window or Linux Debian based. -severaddress.png
+
+Copy the link and paste it in your targeted device. -agentcopy.png
+
+It'll automatically install the agent on your targeted device . Restart the device and Wazuh is ready to uses
