@@ -1,0 +1,39 @@
+Let's install the security onion Via USB. Some pics can't be uploaded due to inclusion of ip address which can't be uploaded to github
+Ready the USB with the security onion and start the boot.
+You'll need two cable for the required NIC. -2 Cable.jpg
+If in VM you'll have to adjust the network to bridge adaptor and set up for 2 NIC or it won't work.
+
+Let's start. choose the first option to install normal security onion -Security Onion install.jpg
+It'll ask for you to type yes since it'll delete all your data.  -yes.jpg
+put username and password. example: name_admin  -User Name and Password.jpg
+let it proceed. it'll take time as it to collect data from the USB.
+
+After some time you'll have to log in using your username and password and it'll start the installation. -start installation.jpg
+choose the install option. -install SO.jpg
+choose installation type. EVAL or STANDALONE. it'll require at least 8gb ram and 200gb of storage.  -Choose Installation type.jpg
+
+type AGREE. -AGREE.jpg
+Next will ask you to standard install or airgap. airgap installation is for offline so let's choose standard. -standard or airgap.jpg
+
+create your host name. -host name.jpg
+choose NIC for management. -choose NIC.jpg
+to clarify : we use two cables which is called as NIC(network interface card) in this case use one for monitor and one for management.
+
+Now let's set up our ipv4 address. -setup ipv4.jpg
+Set up as recommended if you don't know what to set up. -set as recommended.jpg
+For the gateway's IP. it'll be your admin ip like 192.168.1.1 depends on your network but most home wifi are the same local ip. -gateway ip.xcf
+For DNS just proceed with default input. -DNS.jpg
+set your DNS search domain. -DNS name.jpg
+For this set up we'll use direct connect which is easier. -direct connect.jpg
+
+We are left with one open NIC which will be used for Monitoring. Uses spacebar to check the mark since we can't use mouse. -monitor NIC(uses spacebar).jpg
+set your email name for Security onion. -set email.jpg
+
+For access ip address which determine who can access to the Security onion. if you don't know what to put in just allow all the ip of your subnet by typing in 192.168.1.0/24.  -access ip.jpg
+
+and final check. -final check.jpg
+and Let it cook it'll take much time. grill your meat and chill with beer. -let it cook.jpg.
+when it's done it'll be show up like this after reboot. -done.jpg
+
+in my case i had to wait for it to let the update run. after waiting you'll be able to log in using the provided ip in your browser it'll give you warning like it'll unsafe. just proceed and you'll be able to log in. -SO web interface.jpg
+
